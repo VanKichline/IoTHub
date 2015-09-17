@@ -1,0 +1,8 @@
+{
+	"name": "IoTHub",
+	"private": true,
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "react": "0.13.3"
+  }
+}

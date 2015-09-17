@@ -1,0 +1,12 @@
+{
+	"version": "1.0.0",
+  "name": "IoTHub",
+  "author": "Van Kichline",
+  "description": "A cloud-based hub for IoT device collections, using SignalR",
+  "keywords": ["IoT", "SignalR"],
+	"private": true,
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-react": "3.0.1"
+  }
+}
