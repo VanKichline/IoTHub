@@ -1,6 +1,10 @@
 ﻿var TopFrame = React.createClass({
     render: function () {
-        return (<div>Rendered by React</div>);
+        return (
+            <div>
+                <h1>Attached Devices</h1>
+                <ul id="uptimeInfo"></ul>
+            </div>);
     }
 });
 

@@ -6,8 +6,8 @@ using Microsoft.AspNet.SignalR;
 
 namespace IoTHub {
     public class IoTHub : Hub {
-        public void Uptime() {
-            Clients.All.uptime();
+        public void UptimeResponse(int seconds) {
+            // TBD
         }
     }
 }
