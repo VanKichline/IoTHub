@@ -1,8 +1,8 @@
 ﻿$(function () {
     // Declare a proxy to reference the hub.
-    var chat = $.connection.ioTHub;
+    var iotHub = $.connection.ioTHub;
     // Create a function that the hub can call to broadcast messages.
-    chat.client.uptimeResponse = function (device, seconds) {
+    iotHub.client.queryUptime = function (device, seconds) {
         // Html encode display name and message.
         var encodedDevice = $('<div />').text(device).html();
         var encodedSeconds = $('<div />').text(seconds).html();
@@ -12,6 +12,6 @@
 
     // Start the connection.
     $.connection.hub.start().done(function () {
-        chat.server.queryUptime();
+        chat.server.uptimeResponse();
     });
 });
